@@ -1,0 +1,152 @@
+body {
+    width: 100vw;
+
+    background-color: #E9F3FF;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+#titleDiv {
+    display: grid;
+
+    grid-template-columns: 10% auto;
+    grid-template-rows: auto;
+
+    color: #38485C;
+    background-color: #BBDDFF;
+
+    width: 100vw;
+    height: 10vh;
+
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#titleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backButton {
+    font-size: 1.5rem;
+}
+
+#titleDiv h1 {
+    padding: 0;
+    margin: 0;
+
+    font-size: 2rem;
+}
+
+#chordSelectorDiv {
+    width: 100vw;
+    height: 90vh;
+
+    background-color: #E9F3FF;
+
+    padding: 0;
+}
+
+#chordSelector {
+    width: 80vw;
+    height: 80vh;
+
+    padding: 5vh 10vw;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10vh;
+}
+
+#chordForm select {
+    display: block;
+}
+
+#transitionCountInputDiv {
+    display: flex;
+    justify-content: center;
+
+    width: 80vw;
+    height: 10vh;
+
+    margin: 0 10vw;
+}
+
+#transitionCountInput {
+    margin: 2vh 2vw;
+}
+
+#transitionCountAddButton {
+    margin: 2vh 2vw;
+}
+
+#transitionCountListDiv {
+    width: 80vw;
+    height: auto;
+
+    margin: 0 10vw 5vh 10vw;
+
+    border-right: solid 1px #38485C; 
+    border-bottom: solid 1px #38485C; 
+}
+
+.transitionCountListElement {
+    width: 100%;
+    min-height: 20vh;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30% auto;
+
+    background-color: #BBDDFF;
+}
+
+.transitionCountListElement p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0 10%;
+
+    border-top: solid 1px #38485C;
+    border-left: solid 1px #38485C;
+
+    font-size: 1.5rem;
+    color: #38485C;
+}
+
+select, button {
+    color: #38485C;
+    background-color: #BBDDFF;
+
+    text-align: center;
+
+    border: 1px solid #38485C;
+    border-radius: 5vw;
+
+    font-size: 1.5rem;
+
+    appearance: none;
+}
+
+#backButton {
+    border: none;
+    border-radius: 0;
+}
+
+input[type="number"] {
+    color: #38485C;
+    background-color: #BBDDFF;
+    border: 1px solid #38485C;
+
+    font-size: 1rem;
+}
+

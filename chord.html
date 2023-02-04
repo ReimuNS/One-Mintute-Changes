@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>One Minute Changes Tracker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="titleDiv">
+            <button id="backButton">&lt;</button>
+            <div id="titleWrapper">
+                <h1><span id="titleChord1">X</span> to <span id="titleChord2">X</span> Transitions</h1>
+            </div>
+        </div>
+
+        <div id="transitionCountInputDiv">
+            <input id="transitionCountInput" type="number"></input>
+            <button id="transitionCountAddButton">Add</button>
+        </div>
+
+        <div id="transitionCountListDiv">
+            <div class="transitionCountListElement">
+                <p>Count</p>
+                <p>Date</p>
+            </div>
+        </div>
+
+        <script src="backbutton.js"></script>
+        <script src="chord.js"></script>
+    </body>
+
+</html>
