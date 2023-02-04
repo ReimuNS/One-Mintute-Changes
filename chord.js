@@ -53,7 +53,7 @@ function addEntry(ch1, ch2, amount) {
 
     saveTransitionData();
 
-    appendTransitionDataTable(amount, dateString);
+    addToTransitionDataTable(amount, dateString);
 }
 
 function transitionCountAddButtonHandler() {
@@ -84,11 +84,11 @@ function createTableElement(amount, dateString) {
     return div;
 }
 
-function appendTransitionDataTable(amount, dateString) {
+function addToTransitionDataTable(amount, dateString) {
     let listDiv = document.getElementById("transitionCountListDiv");
     let newElement = createTableElement(amount, dateString);
 
-    listDiv.appendChild(newElement);
+    listDiv.prepend(newElement);
 
 }
 
@@ -100,9 +100,10 @@ function setTransitionDataTable() {
 
     const key = chords.toString();
     if (transitionData.hasOwnProperty(key)) {
-        const newChildren = transitionData[key].map(x => {
+        let newChildren = transitionData[key].map(x => {
             return createTableElement(x.amount, x.date);
         });
+        newChildren.reverse(); // need to reverse so that most recent entries are displayed first
 
         listDiv.replaceChildren(...newChildren);
     }
