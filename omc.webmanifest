@@ -1,0 +1,16 @@
+{
+    "name": "One Minute Changes Tracker",
+    "short_name": "OMCT",
+    "description": "Progressive Web App that allows you to record and view your one minute changes chord transition progress.",
+    "icons": [
+        {
+            "src": "icons/icon128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "#38485C",
+    "background_color": "#BBDDFF"
+}
